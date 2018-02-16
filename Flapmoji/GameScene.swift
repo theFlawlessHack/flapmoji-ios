@@ -13,7 +13,33 @@ class GameScene: SKScene {
     
     var bird = SKSpriteNode()
    
+    @objc func makePipes(){
+        let gapHeight = bird.size.height * 5
+        
+        let movementAmount = arc4random() % UInt32(self.frame.height / 2)
+        let pipeOffset = CGFloat(movementAmount) - self.frame.height / 4
+        
+        let pipeTexture1 = SKTexture(imageNamed: "pipe1.png")
+        let pipe1 = SKSpriteNode(texture: pipeTexture1)
+        pipe1.position = CGPoint(x: self.frame.midX + self.frame.width, y: self.frame.midY + pipeTexture1.size().height/2 + gapHeight/2 + pipeOffset)
+        
+        let pipeTexture2 = SKTexture(imageNamed: "pipe2.png")
+        let pipe2 = SKSpriteNode(texture: pipeTexture2)
+        pipe2.position = CGPoint(x: self.frame.midX + self.frame.width, y: self.frame.midY - pipeTexture2.size().height/2 - gapHeight/2 + pipeOffset)
+        
+        let movePipes = SKAction.move(by: CGVector(dx: -2 * self.frame.width, dy: 0), duration: TimeInterval(self.frame.width / 100))
+        pipe1.run(movePipes)
+        pipe2.run(movePipes)
+        
+        self.addChild(pipe1)
+        self.addChild(pipe2)
+        
+        
+    }
+    
     override func didMove(to view: SKView) {
+        
+        _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.makePipes), userInfo: nil, repeats: true)
         
         let backgroundTexture = SKTexture(imageNamed: "bg.png")
         
@@ -60,7 +86,6 @@ class GameScene: SKScene {
         ground.physicsBody!.isDynamic = false
         
         self.addChild(ground)
-
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

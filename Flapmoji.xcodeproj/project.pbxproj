@@ -20,6 +20,7 @@
 		AC78DD592035F28200E062B8 /* flappy2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC78DD542035F28100E062B8 /* flappy2.png */; };
 		AC78DD5A2035F28200E062B8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AC78DD552035F28100E062B8 /* bg.png */; };
 		AC78DD5B2035F28200E062B8 /* flappy1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC78DD562035F28100E062B8 /* flappy1.png */; };
+		AC78DD5D2036590700E062B8 /* flappy-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AC78DD5C2036590700E062B8 /* flappy-bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		AC78DD542035F28100E062B8 /* flappy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy2.png; sourceTree = "<group>"; };
 		AC78DD552035F28100E062B8 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		AC78DD562035F28100E062B8 /* flappy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy1.png; sourceTree = "<group>"; };
+		AC78DD5C2036590700E062B8 /* flappy-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flappy-bg.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				AC78DD3C2035F11300E062B8 /* GameScene.sks */,
 				AC78DD3E2035F11300E062B8 /* Actions.sks */,
 				AC78DD402035F11300E062B8 /* GameScene.swift */,
+				AC78DD5C2036590700E062B8 /* flappy-bg.png */,
 				AC78DD552035F28100E062B8 /* bg.png */,
 				AC78DD562035F28100E062B8 /* flappy1.png */,
 				AC78DD542035F28100E062B8 /* flappy2.png */,
@@ -153,6 +156,7 @@
 				AC78DD5A2035F28200E062B8 /* bg.png in Resources */,
 				AC78DD572035F28200E062B8 /* pipe2.png in Resources */,
 				AC78DD482035F11300E062B8 /* Assets.xcassets in Resources */,
+				AC78DD5D2036590700E062B8 /* flappy-bg.png in Resources */,
 				AC78DD592035F28200E062B8 /* flappy2.png in Resources */,
 				AC78DD4B2035F11300E062B8 /* LaunchScreen.storyboard in Resources */,
 				AC78DD582035F28200E062B8 /* pipe1.png in Resources */,
